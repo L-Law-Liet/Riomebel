@@ -1,0 +1,161 @@
+.form_welcome{
+	width: 80%;
+	margin: 0 auto;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 15px rgba(122, 122, 122, 0.25);
+	border-radius: 5px;
+	display: flex;
+	justify-content: flex-end;
+	background-image: url("/images/banners/divan.png");
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-position: -21px 0px;
+	margin-bottom: 70px;
+	margin-top:100px;
+	form{
+		width: 40%;
+		margin-left: auto;
+		padding-top: 50px;
+		margin-right: 100px;
+		padding-bottom: 70px;
+		.title{
+			font-family: Geometria;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 25px;
+			color: $blue;
+			margin-bottom: 10px;
+		}
+		.subtitle{
+			font-family: Geometria;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 20px;
+			margin-bottom: 26px;
+			color: #8B8B8B;	
+		}
+		.form-control{
+			border: 1px solid #EAEBED;
+			box-sizing: border-box;
+			border-radius: 5px;
+			padding: 11px 16px;
+			font-family: Geometria;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 18px;
+			color: $black;
+			margin-bottom: 10px;
+			height: 40px;
+			&:placeholder{
+				color: #8B8B8B;
+			}
+		}
+		.form-control-file{
+			margin-bottom: 30px;
+		}
+		.btn-main{
+			width: 100%;
+			border:none;
+		}
+	}
+}
+
+.input-file-wrap .btn-tertiary{
+	color:#555;
+	padding:0;
+	line-height:34px;
+	width:160px;
+	display:block;
+	background: #2D3355;
+	border-radius: 5px;
+	font-family: Geometria;
+	font-weight: 500;
+	font-size: 14px;
+	color: #FFFFFF;
+	margin-bottom: 35px;
+}
+.input-file-wrap .btn-tertiary:hover,.input-file-wrap .btn-tertiary:focus{
+	background-color: #262B47;
+}
+.input-file-wrap .input-file{
+	width:.1px;
+	height:.1px;
+	opacity:0;
+	overflow:hidden;
+	position:absolute;
+	z-index:-1
+}
+.input-file-wrap .input-file + .js-labelFile{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	padding:0 10px;
+	cursor:pointer;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.form_welcome{
+		width: 95%;
+		background-image:url("/images/banners/divan_y.png");
+		background-position: center 106%;
+		background-size: contain;
+		form{
+			margin: 0 auto;
+			width: 90%;
+			padding-bottom: 146px;
+			.title{
+				text-align: center;
+				font-weight: bold;
+				font-size: 25px;
+				line-height: 31px;
+			}
+			.subtitle{
+				text-align: center;
+				font-size: 14px;
+				line-height: 18px;
+			}
+		}
+		.input-file-wrap .btn-tertiary{
+			background-color: transparent;
+			color: $blue;
+			text-decoration: underline;
+			padding: 0;
+			max-width: fit-content;
+    		width: inherit;
+		}
+	}
+}
+
+.form_welcome{
+	.invalid-feedback{
+		display: block;
+		margin-top: 0;
+		font-weight: 400;
+		margin-top: -10px;
+    	margin-bottom: 10px;
+    	&.photo{
+    		margin-top: -35px;
+    	}
+	}
+}
+
+.box_total .details li .count b{
+	font-weight: normal;
+}
+
+.box_total .details li.total .count b{
+	font-weight: normal;
+}
+
+.checkout_form-wrap{
+	.invalid-feedback{
+	display: block;
+	margin: 0;
+    margin-top: -5px;
+    margin-bottom: 10px;
+	}
+}
